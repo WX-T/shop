@@ -1,0 +1,1 @@
+<span id="cart-total"><?php echo $text_count; ?></span>

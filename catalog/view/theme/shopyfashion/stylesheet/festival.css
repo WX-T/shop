@@ -1,0 +1,494 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #333;
+  font-family: "microsoft yahei";
+}
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+button,
+p,
+blockquote,
+th,
+td,
+address span a {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+ol li,
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #369;
+}
+img {
+  border: 0;
+}
+.c {
+  overflow: hidden;
+  height: 0;
+  font-size: 0;
+  clear: both;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.none {
+  display: none;
+}
+* html .clearfix,
+:first-child + html .clearfix {
+  zoom: 1;
+}
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  background: #eee;
+  width: 100%;
+  max-width: 640px;
+}
+.main {
+  background: #bbf2f0;
+  width: 100%;
+  padding-bottom: 55px;
+}
+.banner {
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+}
+.pointdown {
+  position: relative;
+  box-sizing: border-box;
+  width: 30rem;
+  margin: 1rem auto;
+  border: .35rem solid #a5e9e6;
+  background: #4bc6ba;
+  height: 4rem;
+}
+.pointdown hr {
+  position: absolute;
+  top: 1.2rem;
+  width: 20rem;
+  left: 50%;
+  margin-left: -10rem;
+  border-color: #366d7a;
+  z-index: 1;
+}
+.pointdown h2 {
+  position: absolute;
+  z-index: 2;
+  margin-top: .5rem;
+  margin-left: -4rem;
+  left: 50%;
+  padding: 0 1rem;
+  width: 6rem;
+  background: #252847;
+  font: 1rem/1.5rem "microsoft yahei";
+  color: #f0f1f3;
+  text-align: center;
+  box-shadow: .5rem .5rem 0 0 #4bc6ba, -.5rem -.4rem 0 0 #4bc6ba;
+}
+.pointdown em {
+  position: absolute;
+  top: 2.3rem;
+  left: 50%;
+  margin-left: -.5rem;
+  z-index: 3;
+  display: inline-block;
+  border-left: .5rem solid #252847;
+  border-top: .35rem solid transparent;
+  border-bottom: .35rem solid transparent;
+}
+.pointdown em i {
+  position: absolute;
+  display: block;
+  top: -.3rem;
+  right: -0.6rem;
+  border-right: .5rem solid #252847;
+  border-top: .35rem solid transparent;
+  border-bottom: .35rem solid transparent;
+}
+.gift {
+  overflow: hidden;
+  width: 30rem;
+  margin: 1.5rem auto;
+}
+.gift .img {
+  float: left;
+  width: 14rem;
+  cursor: pointer;
+}
+.gift .img img {
+  display: block;
+  width: 14rem;
+}
+.gift .img p {
+  width: 14rem;
+  background: #182e60;
+  padding: .5rem;
+  font: 1rem/1.5rem "microsoft yahei";
+  color: #fff;
+  box-sizing: border-box;
+}
+.gift .explain {
+  width: 14.5rem;
+  float: right;
+}
+.gift .explain .text {
+  font: 1.05rem/1.7rem "黑体";
+  color: #213c78;
+}
+.gift .explain .text3,
+.gift .explain .text4 {
+  margin: 3.8rem 0;
+}
+.gift .explain .text6 {
+  margin-bottom: 5rem;
+}
+.gift .explain .text7 {
+  margin-bottom: 2rem;
+}
+.gift .explain .text8 {
+  margin-bottom: 4rem;
+}
+.gift .explain .text9 {
+  margin-bottom: 3rem;
+}
+.gift .explain .text11 {
+  margin-bottom: 7rem;
+}
+.gift .explain .price {
+  height: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid;
+  -webkit-border-color: #008000 #5093b8 #009D74;
+  border-color: #008000 #5093b8 #009D74;
+  border-radius: .3rem;
+  padding: 0 .75rem;
+  display: inline-block;
+  margin-bottom: .4rem;
+}
+.gift .explain .price span {
+  font: 1.6rem/3rem arial;
+  font-weight: bold;
+  color: #026098;
+}
+.gift .explain .price s {
+  display: inline-block;
+  float: right;
+  font: .9rem/3rem arial;
+  color: #252847;
+}
+.gift-right .img {
+  float: right;
+}
+.gift-right .explain {
+  float: left;
+}
+.lookmore {
+  border-top: 2px solid #708d9c;
+  position: relative;
+  width: 28.75rem;
+  margin: 2.5rem auto;
+}
+.lookmore span {
+  position: absolute;
+  display: block;
+  font: 1.2rem/1.8rem "microsoft yahei";
+  color: #fff;
+  width: 9.5rem;
+  text-align: center;
+  top: -.9rem;
+  left: 50%;
+  margin-left: -4.75rem;
+  box-shadow: 1rem 0 0 #BBF2F0, -1rem 0 0 #BBF2F0;
+  background: #252847;
+}
+
+/** 电子产品页面  **/
+.main-elec {
+  width: 100%;
+  max-width: 640px;
+}
+.elec {
+  width: 100%;
+  border-top: .35rem solid #cbff35;
+  overflow: hidden;
+  position: relative;
+}
+.elec .bg-colorline {
+  width: 8rem;
+}
+.elec .elec-title {
+  text-align: center;
+  color: #fff;
+  font: 1.4rem/2rem "黑体";
+  margin-top: .4rem;
+  margin-bottom: .5rem;
+  position: relative;
+  z-index: 2;
+}
+.elec .elec-img {
+  position: relative;
+  z-index: 2;
+}
+.elec .elec-img img {
+  display: inline-block;
+  width: 100%;
+}
+.elec .explain {
+  width: 16rem;
+  margin: 0 1rem;
+  position: relative;
+  z-index: 2;
+}
+.elec .explain .text {
+  width: 100%;
+  font: 1.05rem/1.6rem "黑体";
+  color: #fff;
+  text-indent: .05rem;
+}
+.elec .explain .price {
+  height: 3rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  -webkit-border-color: #449d1a #017272 #015881;
+  border-color: #449d1a #017272 #015881;
+  border-radius: .3rem;
+  padding: 0 .75rem;
+  display: inline-block;
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
+}
+.elec .explain .price span {
+  font: 1.6rem/3rem arial;
+  font-weight: bold;
+  color: #cbff35;
+}
+.elec .explain .price s {
+  display: inline-block;
+  float: right;
+  font: .9rem/3rem arial;
+  color: #449d1a;
+  margin-left: 1rem;
+}
+.elec-left .explain {
+  float: left;
+}
+.elec-left .elec-img {
+  float: right;
+}
+.elec-right .explain {
+  float: right;
+}
+.elec-right .elec-img {
+  float: left;
+}
+.elec-product1 {
+  background: url(../image/electronics/bg-first.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.elec-product1 .elec-img {
+  width: 8.7rem;
+  margin-right: 2rem;
+}
+.elec-product2 {
+  background: url(../image/electronics/bg-second.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.elec-product2 .elec-img {
+  width: 10.6rem;
+  margin-left: 2rem;
+}
+.elec-product2 .explain .price {
+  margin-bottom: .5rem;
+}
+.elec-product3,
+.elec-product6 {
+  background: url(../image/electronics/bg-center.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.elec-product3 .elec-img {
+  width: 9rem;
+  margin-right: 2rem;
+}
+.elec-product6 .elec-img {
+  width: 13rem;
+  margin-right: .5rem;
+  margin-top: 3rem;
+}
+.elec-product4 {
+  background: url(../image/electronics/bg-thrid.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.elec-product4 .elec-img {
+  width: 12.5rem;
+  margin-top: 2.3rem;
+  margin-left: .8rem;
+}
+.elec-product5 {
+  background: url(../image/electronics/bg-forth.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.elec-product5 .elec-img {
+  width: 12.5rem;
+  margin-top: 2.3rem;
+  margin-right: 1rem;
+}
+.elec-product7 {
+  background: url(../image/electronics/bg-last.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.elec-product7 .explain {
+  width: 17.5rem;
+  margin-right: .5rem;
+}
+.elec-product7 .elec-img {
+  width: 12rem;
+  margin: 3.8rem .5rem 0 0;
+}
+
+/*情人节专场*/
+.qixi-main {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+.qixi-main .banner {
+  width: 100%;
+}
+.qixi-main .banner img {
+  width: 100%;
+  height: auto;
+}
+.qixi-main .title {
+  padding: .5rem 0;
+}
+.qixi-main .title img {
+  display: block;
+  margin: 0 auto;
+  width: 15rem;
+  height: auto;
+}
+.qixi-main .swiper-container-free-mode .swiper-wrapper {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+.qixi-main .swiper-container-free-mode .swiper-wrapper .swiper-slide {
+  width: 9rem;
+}
+.qixi-main .swiper-container-free-mode .swiper-wrapper .swiper-slide .img {
+  width: 8rem;
+  box-sizing: border-box;
+  border: 1px solid #e1e1e1;
+  height: 8rem;
+  margin: 0 auto;
+  padding: .5rem;
+  position: relative;
+}
+.qixi-main .swiper-container-free-mode .swiper-wrapper .swiper-slide .img img {
+  display: block;
+}
+.qixi-main .swiper-container-free-mode .swiper-wrapper .swiper-slide .img .more {
+  width: 3.5rem;
+  display: inline-block;
+  font: 1.6rem/1 "microsoft yahei";
+  color: #f884ba;
+  margin: 2.2rem 0 0 1.3rem;
+  text-align: left;
+}
+.qixi-main .swiper-container-free-mode .swiper-wrapper .swiper-slide .img .right-arr {
+  display: inline-block;
+  width: 1.15rem;
+  height: 1.95rem;
+  background: url(../images/valentineday/red-arr.jpg) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: super;
+}
+.qixi-main .swiper-container-free-mode .swiper-wrapper .swiper-slide .img .meyer {
+  position: absolute;
+  background: url(../images/bg-meiya2.png) no-repeat;
+  background-size: 100% 100%;
+  width: 1.7rem;
+  height: 1.9rem;
+  text-align: center;
+  font: .6rem/.8rem "microsoft yahei";
+  color: #d09f26;
+  top: 0;
+  left: .3rem;
+  box-sizing: border-box;
+  padding-top: .1rem;
+}
+.qixi-main .swiper-container-free-mode .swiper-wrapper .swiper-slide .goodsname {
+  width: 8rem;
+  margin: 0 auto;
+  font: 1.05rem/1.4rem "microsoft yahei";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 2.8rem;
+}
+.qixi-main .swiper-container-free-mode .swiper-wrapper .swiper-slide .univalence {
+  width: 8rem;
+  margin: 0 auto;
+  font: 1.4rem/1.8rem "microsoft yahei";
+  font-weight: bold;
+  color: #ef4577;
+  text-align: center;
+  text-indent: -.3rem;
+}
+.qixi-main .swiper-container-free-mode .swiper-wrapper .swiper-slide .stages {
+  text-align: center;
+  width: 8rem;
+  margin: 0 auto;
+  font: 1.05rem/1.4rem "microsoft yahei";
+  color: #f884ba;
+}
+.qixi-main .single-product {
+  margin-top: .6rem;
+  font-size: 0;
+}
+.qixi-main .single-product .pro-img {
+  width: 15rem;
+  height: 12.5rem;
+  margin: 0 0 .65rem .65rem;
+  display: inline-block;
+}
+.qixi-main .single-product .pro-img img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=festival.css.map */
